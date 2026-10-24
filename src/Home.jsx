@@ -1,6 +1,8 @@
+import styled from "styled-components";
+
 function Home() {
   return (
-    <div>
+    <HomeStyle>
       <h1>The Best Movie According to Odniel</h1>
 
       <h2>My top 3 movies of all-time</h2>
@@ -31,8 +33,12 @@ function Home() {
         power of love, friendship, and never giving up on the people we care
         about.
       </p>
-    </div>
+    </HomeStyle>
   );
 }
+
+const HomeStyle = styled.div`
+  
+`;
 
 export default Home;
