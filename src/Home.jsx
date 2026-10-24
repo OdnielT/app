@@ -3,37 +3,17 @@ import styled from "styled-components";
 function Home() {
   return (
     <HomeStyle>
-      <ul>
-        <li>A</li>
-        <li>
-          B
-          <ol>
-            <li>B1</li>
-            <li>
-              B2
-              <ul>
-                <li>
-                  B2a
-                  <ul>
-                    <li>B2aa</li>
-                    <li>B2ab</li>
-                  </ul>
-                </li>
-                <li>B2b</li>
-                <li>B2c</li>
-              </ul>
-            </li>
-            <li>
-              B3
-              <ol>
-                <li>B31</li>
-                <li>B32</li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-        <li>C</li>
-      </ul>
+     <h1> My top 5 Favourite Websites</h1>
+
+     <ol start={5}>
+        <li><a href="https://odniel.com/">Odniel</a></li>
+        <li><a href="https://brandgr.com/">Brandgr</a></li>
+        <li><a href="https://alyafoods.co.uk/">Alya Foods</a></li>
+        <li><a href="https://royalgardensolutions.com/">Royal Garden Solutions</a></li>
+        <li><a href="https://hemasautocare.com/">Hemas Auto Care</a></li>
+     </ol>
+
+     <img src="/profile.png" alt="profile pic" />
     </HomeStyle>
   );
 }
