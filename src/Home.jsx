@@ -3,41 +3,41 @@ import styled from "styled-components";
 function Home() {
   return (
     <HomeStyle>
-        <h1>Angela's Cinnamon Roll Recipe</h1>
-
-        <h2>Ingredients</h2>
-
-        <h3>For the dough:</h3>
-        <ul>
-            <li>¾ cup warm milk</li>
-            <li>2 ¼ teaspoons yeast </li>
-            <li>¼ cup granulated sugar</li>
-            <li>1 egg plus 1 egg yolk</li>
-            <li>¼ cup butter</li>
-            <li>3 cups bread flour</li>
-        </ul>
-
-        <h3>For the filling:</h3>
-        <ul>
-            <li>/3 cup dark brown sugar </li>
-            <li>1 ½ tablespoons ground cinnamon</li>
-            <li>¼ cup butter</li>
-        </ul>
-
-
-
-        
-
-
-
-
-
+      <ul>
+        <li>A</li>
+        <li>
+          B
+          <ol>
+            <li>B1</li>
+            <li>
+              B2
+              <ul>
+                <li>
+                  B2a
+                  <ul>
+                    <li>B2aa</li>
+                    <li>B2ab</li>
+                  </ul>
+                </li>
+                <li>B2b</li>
+                <li>B2c</li>
+              </ul>
+            </li>
+            <li>
+              B3
+              <ol>
+                <li>B31</li>
+                <li>B32</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>C</li>
+      </ul>
     </HomeStyle>
   );
 }
 
-const HomeStyle = styled.div`
-  
-`;
+const HomeStyle = styled.div``;
 
 export default Home;
