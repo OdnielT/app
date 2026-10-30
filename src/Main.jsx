@@ -1,20 +1,22 @@
-import styled from "styled-components";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
+// Main entry file (App.jsx or index.js layout)
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navigation from "./Components/Navigation";
 import Home from "./Components/Home";
-import Packages from "./Components/Packages";
+import About from "./Components/About"; // Confirm this path matches your directory exactly
 
 function Main() {
   return (
-    <HomeStyle>
-        <About />
-        <Contact />
-        <Home />
-        <Packages />
-    </HomeStyle>
+    <BrowserRouter>
+      <div>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
-
-const HomeStyle = styled.div``;
 
 export default Main;
